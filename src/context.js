@@ -10,6 +10,9 @@ export const themes = {
     color: 'black'
   }
 };
-const ThemeContext = React.createContext(themes.dark);
+const ThemeContext = React.createContext({
+  theme: themes.dark,
+  setNewTheme: () => {}
+});
 
 export default ThemeContext;
